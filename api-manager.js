@@ -59,7 +59,6 @@ export async function eliminarProducto(id) {
     }
 }
 
-// Nota: La función actualizarProducto ya existe en tu archivo, la mantengo por si se usa luego.
 export async function actualizarProducto(producto) {
     try{
         const response = await fetch(`https://fakestoreapi.com/products/${producto.id}`,{
@@ -74,4 +73,5 @@ export async function actualizarProducto(producto) {
     }catch(error){
         console.log("❌ Error al actualizar el producto:", error)
     }
+
 }
